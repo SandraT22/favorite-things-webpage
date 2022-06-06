@@ -13,20 +13,12 @@ $(document).ready(function() {
     $("#result1").text(Array[0]);
     $("#result2").text(Array[1]);
     $("#result3").text(Array[2]);
+
+    $("#result-show").show()
   });
   $(".clickable").click(function() {
     $("#result-show").toggle();
   })
-  // $(".clickable2").click(function() {
-  //   let newArray = [];
-  //   newArray.push(Array);
-  //   $("#result2").text(newArray[1]);
-  // })
-  // $(".clickable3").click(function() {
-  //   let newArray = [];
-  //   newArray.push(Array);
-  //   $("#result3").text(newArray[2]);
-  // })
 });
 
 
