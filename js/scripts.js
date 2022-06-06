@@ -4,20 +4,30 @@ $(document).ready(function() {
     const input1 = ($("#input1").val());
     const input2 = ($("#input2").val());
     const input3 = ($("#input3").val());
-    // const Array = ["#input1", "#input2", "#input3"];
-    let Array = ["input1", "input2", "input3"]
+    let Array = [input1, input2, input3]
     console.log("this is working");
+    let newArray = [];
+    newArray.push(Array[0]);
+    newArray.push(Array[1]);
+    newArray.push(Array[2]);
+    $("#result1").text(Array[0]);
+    $("#result2").text(Array[1]);
+    $("#result3").text(Array[2]);
   });
   $(".clickable").click(function() {
-    const name = array[0];
-  array.push(input1)
-
+    $("#result-show").toggle();
   })
-  $(".clickable2").click(function() {
-    const address = array[1];
-  })
-  $(".clickable3").click(function() {
-    const dateOfBirth = array[2];
-  })
+  // $(".clickable2").click(function() {
+  //   let newArray = [];
+  //   newArray.push(Array);
+  //   $("#result2").text(newArray[1]);
+  // })
+  // $(".clickable3").click(function() {
+  //   let newArray = [];
+  //   newArray.push(Array);
+  //   $("#result3").text(newArray[2]);
+  // })
 });
+
+
 
